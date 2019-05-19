@@ -1,0 +1,28 @@
+.mdl-cell {
+  border: 1px solid black;
+}
+
+.mdl-grid {
+  border: 2px dashed blue;
+}
+
+.mdl-card {
+  width: 100%;
+}
+
+#local-nav {
+  border: 2px solid red;
+}
+
+/* img {
+  width: 100%;
+} */
+
+.card {
+  height: 500px;
+  background-size: contain;
+}
+
+h2 {
+  background: rgba(245, 245, 245, 0.5);
+}
