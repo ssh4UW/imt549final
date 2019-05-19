@@ -1,7 +1,7 @@
 var clothes = [
   {
     itemid: 1,
-    title: "shoes",
+    title: "oxford shoes",
     description:
       "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
     tags: ["men", "shoes", "formal", "leather"],
@@ -13,7 +13,7 @@ var clothes = [
   },
   {
     itemid: 2,
-    title: "shirt",
+    title: "dress shirt",
     description:
       "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
     tags: ["men", "shirt", "formal", "cotton"],
@@ -25,7 +25,7 @@ var clothes = [
   },
   {
     itemid: 3,
-    title: "t-shirt",
+    title: "graphic t-shirt",
     description:
       "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
     tags: ["men", "tshirt", "casual", "cotton", "graphic"],
@@ -49,7 +49,7 @@ var clothes = [
   },
   {
     itemid: 5,
-    title: "jacket",
+    title: "bomber jacket",
     description:
       "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
     tags: ["men", "jacket", "fall", "warm"],
