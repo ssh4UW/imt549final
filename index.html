@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Kodchasan&display=swap"
+      rel="stylesheet"
+    />
     <!-- MDL CDN Links for CSS and JS -->
     <link
       rel="stylesheet"
@@ -13,33 +18,89 @@
       rel="stylesheet"
       href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <div class="mdl-grid banner">
+        <h1>Zora's Clothing</h1>
+      </div>
+    </header>
+    <div class="nav">
+      <div class="mdl-layout__header-row nav">
+        <!-- Title -->
+        <span class="mdl-layout-title nav">Zora's Clothing</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <button
+            value="women"
+            class="mdl-button mdl-js-button navbutton women"
+          >
+            Women
+          </button>
+          <button value="men" class="mdl-button mdl-js-button navbutton men">
+            Men</button
+          ><button class="mdl-button mdl-js-button navbutton">
+            Contact
+          </button>
+        </nav>
+      </div>
+    </div>
+    <!-- </header> -->
     <div class="mdl-grid">
       <div
-        class="mdl-cell mdl-cell--2-col-desktop mdl-cell--12-col-tablet"
+        class="mdl-cell mdl-cell--2-col-desktop mdl-cell--12-col"
         id="local-nav"
       >
         <p>test</p>
       </div>
+      <!-- change cell size for local nav window -->
       <div
-        class="mdl-cell mdl-cell--10-col-desktop mdl-cell--12-col-tablet"
+        class="mdl-cell mdl-cell--12-col-desktop mdl-cell--12-col-tablet"
         id="main"
       >
-        <!-- <div class="mdl-grid mdl-grid--nesting"> -->
-        <!-- <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
-            <div class="mdl-card"></div>
+        <div class="mdl-grid mdl-grid--nesting">
+          <div class="mdl-cell mdl-cell-4-col-desktop promo">
+            <img src="images/sale.jpg" alt="mannequins in window" />
+            <h2>Spring Sale</h2>
           </div>
-          <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
-            <div class="mdl-card"></div>
+          <div class="mdl-cell mdl-cell-4-col-desktop"></div>
+          <div class="mdl-cell mdl-cell-4-col-desktop">
+            <img src="images/home.jpg" alt="clothing on racks" />
+            <h5>Store Hours:</h5>
+            <table>
+              <thead>
+                <th>Day</th>
+                <th>Hours</th>
+              </thead>
+              <tbody class="mdl-data-table mdl-js-data-table noborder">
+                <tr class="noborder">
+                  <td class="mdl-data-table__cell--non-numeric noborder">
+                    Monday-Thursday
+                  </td>
+                  <td>10am-6pm</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Friday</td>
+                  <td>10am-10pm</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Saturday</td>
+                  <td>9am-11pm</td>
+                </tr>
+                <tr>
+                  <td class="mdl-data-table__cell--non-numeric">Sunday</td>
+                  <td>9am-5pm</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="mdl-cell mdl-cell--4-col-desktop mdl-cell--12-col-tablet">
-            <div class="mdl-card"></div>
-          </div> -->
-        <!-- </div> -->
+        </div>
       </div>
     </div>
     <script src="js/clothes.js"></script>
