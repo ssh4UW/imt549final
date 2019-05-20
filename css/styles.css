@@ -1,3 +1,20 @@
+* {
+  box-sizing: border-box;
+  font-family: "Kodchasan", sans-serif;
+}
+
+.banner {
+  background-image: url("../images/banner2.jpg");
+  background-size: cover;
+  height: 150px;
+}
+
+h1 {
+  color: #ff1554;
+  font-family: "Kodchasan", sans-serif;
+  display: inline-block;
+  margin: auto;
+}
 .mdl-cell {
   margin: 5px;
 }
@@ -12,13 +29,29 @@
 
 #local-nav {
   border: 2px solid red;
+  display: none;
+}
+
+.navbutton {
+  height: 100%;
+  color: rgba(245, 245, 245, 0.75);
 }
 
 .card {
-  width: 320px;
+  /* width: 320px; */
   height: 400px;
   border: 2px solid #2c2727;
   margin: auto;
+}
+
+.nav {
+  background-color: #2c2727;
+  color: #ff1554;
+  font-family: "Kodchasan", sans-serif;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+  z-index: 10;
 }
 
 .card-details {
@@ -29,11 +62,13 @@
 .description {
   background-color: rgba(44, 39, 39, 1);
   color: rgba(245, 245, 245, 1);
+  width: 100%;
 }
 
 .detail {
   background-color: rgba(44, 39, 39, 1);
   color: rgba(245, 245, 245, 1);
+  width: 100%;
 }
 
 .tags {
@@ -45,6 +80,28 @@
   color: rgba(0, 0, 0, 0.33);
 }
 
-h2 {
+.card-title {
   background: rgba(245, 245, 245, 0.75);
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.promo:hover {
+  border: 1px solid red;
+}
+
+table {
+  width: 100%;
+}
+
+.noborder {
+  border-bottom: none;
+}
+
+h2 {
+  display: inline-block;
+  margin-left: auto;
 }
