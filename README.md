@@ -25,3 +25,13 @@ This is the final project for IMT 549 by Stephen Holmes. The project is a websit
 ![Accoustic](images/pexels-photo-2079167.jpeg) Photo by Lucas Pezeta from [Pexels](https://www.pexels.com/zh-tw/photo/accoustic-2079167/)
 
 ![Man Wearing Teal and Yellow Crew-neck Top and Black Jeans](images/pexels-photo-2213141.jpeg) Photo by Luis Quintero from [Pexels](https://www.pexels.com/photo/man-wearing-teal-and-yellow-crew-neck-top-and-black-jeans-2213141/)
+
+![Woman Wearing Red Top Raising Arms](images/colorful_blouse.jpg) Photo by Joshua McKnight from [Pexels](https://www.pexels.com/photo/woman-wearing-red-top-raising-arms-1544725/)
+
+![woman wearing floral top beside chain link fence during day](images/flower_top.jpg) Photo by Alex Lambley on [Unsplash](https://unsplash.com/photos/i2AmfpRO0Cc)
+
+![Woman Taking Selfie](images/women_denim.jpg) Photo by Liza Rahman on [Pexels](https://www.pexels.com/photo/woman-taking-selfie-1766055/)
+
+![Woman with hands on her hips](images/orange_top.jpg) Photo by Eye on Ebony on [Unsplash](https://unsplash.com/photos/OExQjtxbIpE)
+
+![Woman Wearing White Polo Long Sleeved Shirt](images/woman_in_tie.jpg) Photo by Christina Morillo on [Pexels](https://www.pexels.com/photo/woman-wearing-white-polo-long-sleeved-shirt-1181695/)

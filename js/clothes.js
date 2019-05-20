@@ -73,7 +73,7 @@ var clothes = [
   },
   {
     itemid: 7,
-    title: "jacket",
+    title: "wool jacket",
     description:
       "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
     tags: ["men", "jacket", "casual"],
@@ -97,7 +97,7 @@ var clothes = [
   },
   {
     itemid: 9,
-    title: "sweatshirt",
+    title: "flannel sweatshirt",
     description:
       "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
     tags: ["men", "plaid", "casual", "cotton", "sweatshirt"],
@@ -109,7 +109,7 @@ var clothes = [
   },
   {
     itemid: 10,
-    title: "t-shirt",
+    title: "hamburger t-shirt",
     description:
       "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
     tags: ["men", "tshirt", "casual", "cotton", "graphic"],
@@ -117,6 +117,66 @@ var clothes = [
     image: {
       url: "pexels-photo-2213141.jpeg",
       text: "graphic t-shirt"
+    }
+  },
+  {
+    itemid: 11,
+    title: "coloful blouse",
+    description:
+      "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
+    tags: ["women", "blouse", "casual", "cotton", "colorful"],
+    price: "30.00",
+    image: {
+      url: "colorful_blouse.jpg",
+      text: "woman in multi-colored top"
+    }
+  },
+  {
+    itemid: 12,
+    title: "flower top",
+    description:
+      "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
+    tags: ["women", "blouse", "casual", "cotton", "flower", "tshirt"],
+    price: "20.00",
+    image: {
+      url: "flower_top.jpg",
+      text: "woman in flower top"
+    }
+  },
+  {
+    itemid: 13,
+    title: "denim jacket",
+    description:
+      "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
+    tags: ["women", "jacket", "casual", "denim"],
+    price: "70.00",
+    image: {
+      url: "women_denim.jpg",
+      text: "woman in denim jacket"
+    }
+  },
+  {
+    itemid: 14,
+    title: "orange top",
+    description:
+      "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
+    tags: ["women", "blouse", "formal"],
+    price: "35.00",
+    image: {
+      url: "orange_top.jpg",
+      text: "woman in orange top"
+    }
+  },
+  {
+    itemid: 15,
+    title: "tie",
+    description:
+      "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
+    tags: ["women", "work", "business", "formal"],
+    price: "35.00",
+    image: {
+      url: "woman_in_tie.jpg",
+      text: "woman in blue tie"
     }
   }
 ];
