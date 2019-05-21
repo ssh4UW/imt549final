@@ -1,40 +1,47 @@
 * {
   box-sizing: border-box;
-  font-family: "Kodchasan", sans-serif;
+  /* font-family: "Kodchasan", sans-serif; */
 }
 
 .banner {
   background-image: url("../images/banner2.jpg");
   background-size: cover;
-  height: 150px;
+  height: 200px;
 }
-
 h1 {
   color: #ff1554;
-  font-family: "Kodchasan", sans-serif;
+  font-family: "Cedarville Cursive", cursive;
   display: inline-block;
   margin: auto;
-}
-.mdl-cell {
-  margin: 5px;
+  font-size: 75px;
 }
 
-.mdl-grid {
-  border: 2px dashed blue;
+.mdl-cell {
+  margin: 5px;
 }
 
 .mdl-card {
   width: 100%;
 }
 
-#local-nav {
+/* #local-nav {
   border: 2px solid red;
   display: none;
-}
+} */
 
 .navbutton {
   height: 100%;
   color: rgba(245, 245, 245, 0.75);
+  width: 100px;
+}
+
+.navbutton:hover {
+  color: red;
+}
+
+a {
+  color: #ff1554;
+  text-decoration: none;
 }
 
 .card {
@@ -89,10 +96,6 @@ img {
   width: 100%;
 }
 
-.promo:hover {
-  border: 1px solid red;
-}
-
 table {
   width: 100%;
 }
@@ -104,4 +107,32 @@ table {
 h2 {
   display: inline-block;
   margin-left: auto;
+}
+
+#mapid {
+  height: 250px;
+}
+
+#map {
+  margin-top: 50px;
+  z-index: 1;
+}
+
+footer {
+  background-color: #2c2727;
+  height: 150px;
+  color: whitesmoke;
+  padding-left: 10px;
+  padding-top: 25px;
+}
+
+.active {
+  color: red;
+  background-color: rgba(158, 158, 158, 0.2);
+}
+
+@media (max-width: 840px) {
+  .banner {
+    display: none;
+  }
 }
