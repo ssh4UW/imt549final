@@ -89,6 +89,7 @@ a {
 
 .card-title {
   background: rgba(245, 245, 245, 0.75);
+  padding-left: 0.5em;
 }
 
 img {
@@ -111,11 +112,11 @@ h2 {
 
 #mapid {
   height: 250px;
+  z-index: 1;
 }
 
 #map {
   margin-top: 50px;
-  z-index: 1;
 }
 
 footer {
@@ -131,8 +132,47 @@ footer {
   background-color: rgba(158, 158, 158, 0.2);
 }
 
+/* #hamburger {
+  display: none;
+} */
+
+.mdl-layout__drawer-button,
+.mdl-layout__drawer {
+  left: initial;
+  right: 0;
+  visibility: hidden;
+}
+
+.mdl-layout__drawer {
+  transform: translateX(250px);
+}
+
+.hamburger-item {
+  border: none;
+  background-color: whitesmoke;
+  text-align: left;
+}
+
+#drawer {
+  position: fixed;
+}
+
 @media (max-width: 840px) {
   .banner {
     display: none;
+  }
+
+  #hamburger {
+    display: inline-block;
+    pointer-events: auto;
+  }
+
+  .navbutton {
+    display: none;
+  }
+  .mdl-layout__drawer-button,
+  .mdl-layout__drawer {
+    visibility: visible;
+    color: #ff1554;
   }
 }
