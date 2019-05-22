@@ -17,7 +17,10 @@ var storeSchedule = [
 var womenButton = document.querySelector(".women");
 var menButton = document.querySelector(".men");
 var home = document.querySelector(".home");
-
+var hamburger = document.querySelector("#hamburger");
+var womenLink = document.querySelector("#womenLink");
+var menLink = document.querySelector("#menLink");
+var homeLink = document.querySelector("#homeLink");
 // main content section
 var content = document.querySelector(".content");
 
@@ -42,21 +45,12 @@ function deactivateButton(button) {
   active.classList.add("active");
 }
 function onClick() {
-  //Determine which button is activated
   deactivateButton(this);
   clearDisplayWindow();
   renderLocalNav();
   renderMainCell();
-  //renderNestedGrid();
   renderCell(filterTags(this.value));
 }
-
-// home.addEventListener("click", function() {
-//   menButton.classList.remove("active");
-//   womenButton.classList.remove("active");
-//   clearDisplayWindow();
-//   renderHome();
-// });
 
 function renderMainCell() {
   //Function creates the main cell for displaying content.  "Main" doesn't include local navigation.  Child of div id=content
@@ -86,8 +80,8 @@ function renderCell(clothes) {
     var cell = document.createElement("div");
     var window = document.getElementById("display-window");
     cell.classList.add("mdl-cell");
-    cell.classList.add("mdl-cell--12-col-tablet");
-    cell.classList.add("mdl-cell--6-col-desktop");
+    cell.classList.add("mdl-cell--8-col-tablet");
+    cell.classList.add("mdl-cell--4-col-desktop");
     window.appendChild(cell);
     renderCard(clothes[idx], cell);
   }
@@ -289,9 +283,42 @@ function localNavTags(filter) {
   console.log(tagArray);
 }
 
+function hamburgerClose() {
+  hamburger.setAttribute("aria-expanded", "false");
+  hamburger.classList.add("closed");
+  var drawer = document.getElementById("drawer");
+  drawer.classList.remove("is-visible");
+  drawer.setAttribute("aria-hidden", "true");
+}
+
+function hamburgerClick() {
+  hamburgerClose();
+
+  deactivateButton(this);
+  clearDisplayWindow();
+  renderLocalNav();
+  renderMainCell();
+  renderCell(filterTags(this.value));
+}
+
 //Event Listeners
 womenButton.addEventListener("click", onClick);
 menButton.addEventListener("click", onClick);
 home.addEventListener("click", returnHome);
+hamburger.addEventListener("click", function() {
+  if (this.classList.contains("closed")) {
+    hamburger.setAttribute("aria-expanded", "true");
+    hamburger.classList.remove("closed");
+    var drawer = document.getElementById("drawer");
+    drawer.classList.add("is-visible");
+    drawer.setAttribute("aria-hidden", "false");
+  } else hamburgerClose();
+});
 
+womenLink.addEventListener("click", hamburgerClick);
+menLink.addEventListener("click", hamburgerClick);
+homeLink.addEventListener("click", function() {
+  hamburgerClose();
+  returnHome();
+});
 renderHome();
