@@ -127,7 +127,7 @@ var clothes = [
     tags: ["women", "blouse", "casual", "cotton", "colorful"],
     price: "30.00",
     image: {
-      url: "colorful_blouse.jpg",
+      url: "colorful_blouse.png",
       text: "woman in multi-colored top"
     }
   },
@@ -169,7 +169,7 @@ var clothes = [
   },
   {
     itemid: 15,
-    title: "tie",
+    title: "Necktie",
     description:
       "Exercitation magna qui consectetur enim sit aliquip exercitation elit sit. Elit est voluptate in nostrud qui et mollit do et.",
     tags: ["women", "work", "business", "formal"],
