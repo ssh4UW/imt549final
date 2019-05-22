@@ -64,17 +64,49 @@
           ><button class="mdl-button mdl-js-button navbutton home">
             Home
           </button>
+
+          <!-- <button id="hamburger">
+            <object
+              data="images/round-menu-24px.svg"
+              type="image/svg+xml"
+            ></object>
+          </button> -->
         </nav>
+        <div
+          aria-expanded="false"
+          role="button"
+          class="mdl-layout__drawer-button closed"
+          id="hamburger"
+        >
+          <i class="material-icons"></i>
+        </div>
       </div>
     </div>
 
-    <div class="mdl-layout__drawer">
-      <span class="mdl-layout-title">Title</span>
+    <div class="mdl-layout__drawer" id="drawer">
+      <span class="mdl-layout-title">Menu</span>
       <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
-        <a class="mdl-navigation__link" href="">Link</a>
+        <button
+          class="mdl-navigation__link hamburger-item"
+          id="womenLink"
+          value="women"
+        >
+          Women
+        </button>
+        <button
+          class="mdl-navigation__link hamburger-item"
+          id="menLink"
+          value="men"
+        >
+          Men
+        </button>
+        <button
+          class="mdl-navigation__link hamburger-item"
+          id="homeLink"
+          value="home"
+        >
+          Home
+        </button>
       </nav>
     </div>
 
