@@ -1,6 +1,10 @@
 # imt549final
 
-This is the final project for IMT 549 by Stephen Holmes. The project is a website for a fake online clothing retailer, Zora's Clothing.
+This is the final project for IMT 549 by Stephen Holmes. The project is a website for a fake online clothing retailer, Zora's Threads. I used MDL for a style framework combined with Javascript and a few media queries to create an interactive, albeit basic website. Users are view all the clothing by selecting a gender at the top menu. All of the clothes for that gender will appear as cards with a picture and brief description. A sidebar will also appear with links to all of the tags used to describe the current selections. Users can click on a tag to refresh the page and explore the clothing.
+
+On mobile devices, the layout changes by removing the banner image, collapsing the main navigation into a dropdown menu, and limitting 1 card to a row.
+
+I apologize for the messy stylesheet and javascript. Thanks for the fun class.
 
 ## Photo Credits:
 
@@ -35,3 +39,7 @@ This is the final project for IMT 549 by Stephen Holmes. The project is a websit
 ![Woman with hands on her hips](images/orange_top.jpg) Photo by Eye on Ebony on [Unsplash](https://unsplash.com/photos/OExQjtxbIpE)
 
 ![Woman Wearing White Polo Long Sleeved Shirt](images/woman_in_tie.jpg) Photo by Christina Morillo on [Pexels](https://www.pexels.com/photo/woman-wearing-white-polo-long-sleeved-shirt-1181695/)
+
+![Clothes Lot on Cabinet](images/home.jpg) Photo By Pixabay on [Pexels](https://www.pexels.com/photo/boutique-clothes-clothing-indoors-264554/)
+
+![Men's Gray and Black Button-up Shirt on Mannequin](images/sale.jpg)Photo by Artem Beliaikin from [Pexels](https://www.pexels.com/photo/men-s-gray-and-black-button-up-shirt-on-mannequin-1086711/)
