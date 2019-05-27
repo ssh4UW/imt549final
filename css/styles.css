@@ -132,6 +132,28 @@ footer {
   background-color: rgba(158, 158, 158, 0.2);
 }
 
+.taglist {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.tagitem {
+  margin-top: 0.5em;
+  font-size: 1.5em;
+  display: inherit;
+  border: none;
+  background-color: white;
+  width: 100%;
+}
+
+.related {
+  font-size: 1.2ems;
+}
+.tagitem:hover {
+  background-color: rgba(255, 21, 84, 1);
+  cursor: pointer;
+  color: whitesmoke;
+}
+
 /* #hamburger {
   display: none;
 } */
@@ -174,5 +196,13 @@ footer {
   .mdl-layout__drawer {
     visibility: visible;
     color: #ff1554;
+  }
+
+  .taglist {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tagitem {
+    width: 25%;
   }
 }
