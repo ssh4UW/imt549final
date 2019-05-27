@@ -1,5 +1,3 @@
-//Global Variables
-
 //Store schedule
 var storeSchedule = [
   { day: "Monday", hours: "10am-6pm" },
@@ -47,7 +45,7 @@ function deactivateButton(button) {
 function onClick() {
   deactivateButton(this);
   clearDisplayWindow();
-  renderLocalNav();
+  renderLocalNav(this.value);
   renderMainCell();
   renderCell(filterTags(this.value));
 }
@@ -143,7 +141,7 @@ function clearDisplayWindow() {
   content.textContent = "";
 }
 
-function renderLocalNav() {
+function renderLocalNav(value) {
   var localNav = document.createElement("div");
   localNav.classList.add(
     "mdl-cell",
@@ -151,10 +149,44 @@ function renderLocalNav() {
     "mdl-cell--12-col-tablet"
   );
   localNav.setAttribute("id", "local-nav");
-  var para = document.createElement("p");
-  para.textContent = "test";
+  var para = document.createElement("div");
+  para.classList.add("related");
+
+  para.textContent = "Related tags: ";
+  var list = document.createElement("div");
+  list.classList.add("taglist");
+
+  var tags = createArrayOfTags(filterTags(value));
+  console.log(tags);
+  console.log("test");
+  for (var i = 0; i < tags.length; i++) {
+    var tag = document.createElement("button");
+    tag.setAttribute("value", tags[i]);
+    tag.classList.add("tagitem");
+    tag.innerHTML = tags[i];
+    list.appendChild(tag);
+
+    tag.addEventListener("click", onClick);
+  }
   localNav.appendChild(para);
+  localNav.appendChild(list);
   content.appendChild(localNav);
+}
+
+function createArrayOfTags(items) {
+  var tags = [];
+  for (var i = 0; i < items.length; i++) {
+    for (var j = 0; j < items[i]["tags"].length; j++) {
+      if (tags.indexOf(items[i]["tags"][j]) == -1) {
+        tags.push(items[i]["tags"][j]);
+      }
+    }
+  }
+  return tags;
+}
+
+function renderTag(tag) {
+  var tags = createArrayOfTags("");
 }
 
 function renderHome() {
@@ -293,10 +325,9 @@ function hamburgerClose() {
 
 function hamburgerClick() {
   hamburgerClose();
-
   deactivateButton(this);
   clearDisplayWindow();
-  renderLocalNav();
+  renderLocalNav(this.value);
   renderMainCell();
   renderCell(filterTags(this.value));
 }
